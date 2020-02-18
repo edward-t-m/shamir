@@ -1,5 +1,9 @@
 # History
 
+## v0.6.0: (pending)
+
+* Repurposed for sharing BIP39 mnemonic phrases
+
 ## v0.5.6: (February 2017)
 
 * Switch to using `/dev/urandom`.

@@ -1,6 +1,6 @@
-# SSSS
+# shamir39
 
-Shamir's Secret Sharing Scheme
+BIP39 mnemonic seeds split/shared/combined using Shamir's Secret Sharing Scheme
 
 
 ## History
@@ -10,8 +10,10 @@ This is a fork of B. Poettering's SSSS ("Shamir's Secret Sharing Scheme").
 
 ## Intent
 
-This fork exists to simplify the build process a bit, and make minor changes
-to the tool that will facilitate its use in real-world usage scenarios.
+This fork of ssss exists is intended to implement [Ian Coleman's shamir39 specification](https://github.com/iancoleman/shamir39/blob/master/specification.md),
+to facilitate its use in real-world usage scenarios, specifically BIP39 mnemonic seeds used in Bitcoin and other cryptocurrencies.
+
+
 
 
 ## What You Need To Know
@@ -21,18 +23,20 @@ cryptographic algorithms, can lead to a false sense of security if improperly
 used.  Be sure you understand the role it serves, and the limitations it has
 before employing it.
 
-[http://point-at-infinity.org/ssss/index.html](http://point-at-infinity.org/ssss/index.html)
+[http://point-at-infinity.org/ssss/index.html](http://point-at-infinity.org/ssfdasadfsass/index.html)
 
 
 ## Version
 
-This fork is based on `ssss-0.5.tar.gz` (SHA1: 3f8f5046c2c5c3a2cf1a93f0a9446681852b190e).
+This fork is based on  `0.5.6` (SHA256: xxx).
+Which is in turn based on `ssss-0.5.tar.gz` (SHA1: 3f8f5046c2c5c3a2cf1a93f0a9446681852b190e).
 
 
 ## Verification and Installation (VERY IMPORTANT!)
+//TODO commit with my gpg keys, add signed SHASUM file and update this bit
 
 Before installing, when cloning this repo, use a signed tag and verify the
-signature first!
+gpg signature first!
 
 ```bash
 # First, you need to make sure you have the signing key in your GPG keychain:
@@ -53,10 +57,11 @@ git checkout v0.5.6 # This will put you in 'detached head' mode, which is fine
 # Proceed with build steps from here.  See `INSTALL.md` for details.
 ```
 
-You can always find my GPG key signature at [MrJoy.com](http://MrJoy.com).
+Jon Frisby's GPG key signature is at [MrJoy.com](http://MrJoy.com).
 
 
 ## License
 
-This fork follows the same license as the original software:  The GPLv2.  See
-LICENSE for more information.
+This fork of ssss follows the same license as that ssss project: The GPLv2.
+Items from keyphrase project follows the same license as keyprhase: Affero GPL
+
